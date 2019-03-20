@@ -1,0 +1,41 @@
+body {
+  height: 100vh;
+  margin: 0;
+
+  background-color: #012816;
+
+  color: white;
+  font: 1.2rem monospace;
+  text-shadow: 0 0 3px #bebebe;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 1px,
+    transparent 16px
+  );
+}
+
+main {
+  padding: 24px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 2px solid white;
+  padding: 12px;
+  box-shadow: white;
+  box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.75);
+}
