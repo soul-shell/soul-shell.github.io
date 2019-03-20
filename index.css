@@ -6,22 +6,31 @@
 body {
   height: 100vh;
   margin: 0;
+  display: flex;
 
-  font: 1.2em 'Chicago', sans-serif;
+  font: 1.25em 'Chicago', sans-serif;
+
+  /* Created using http://www.patternify.com */
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVQYlWNgGBwgISHh/yBQPIgAAKa/Bl4ztVlWAAAAAElFTkSuQmCC) repeat;
 }
 
 main {
   padding: 15vh 15vw;
+  margin: auto;
 }
 
 .window {
   border: 2px solid;
+  background: white;
+
+  max-width: 680px;
 }
 
 .window-titlebar {
   text-align: center;
   border-bottom: 2px solid;
-  padding: 6px 0;
+  padding: 8px 0;
+  line-height: 28px;
 }
 
 .window-titlebar__stripes {
@@ -40,7 +49,7 @@ main {
 }
 
 .window-content {
-  padding: 24px;
+  padding: 32px;
   border: 3px solid black;
   margin: 1px;
 }
