@@ -15,7 +15,6 @@ body {
 }
 
 main {
-  padding: 15vh 15vw;
   margin: auto;
 }
 
@@ -23,7 +22,8 @@ main {
   border: 2px solid;
   background: white;
 
-  max-width: 680px;
+  width: 85vw;
+  max-width: 980px;
 }
 
 .window-titlebar {
@@ -52,4 +52,22 @@ main {
   padding: 32px;
   border: 3px solid black;
   margin: 1px;
+}
+
+.file-table {
+  border-collapse: collapse;
+}
+
+.file-table tr:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.file-table td {
+  padding: 6px;
+}
+
+.file-table__file {
+  width: 100%;
 }
