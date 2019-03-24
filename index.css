@@ -33,6 +33,18 @@ main {
   line-height: 28px;
 }
 
+.window-titlebar__close-button {
+  width: 22px;
+  margin: 0 6px;
+  border: 3px solid black;
+  text-decoration: none;
+  color: black;
+}
+
+.window-titlebar__close-button:hover {
+  background: black;
+}
+
 .window-titlebar__stripes {
   width: 100%;
   text-align: center;
@@ -47,6 +59,7 @@ main {
 .window-titlebar__stripes__title {
   display: inline-block;
   padding: 0 12px;
+  margin-left: 28px;
   background: #fff;
 }
 
