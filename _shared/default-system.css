@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Chicago';
-  src: url('/third-party/chicagoflf.woff2') format('woff2');
+  src: url('/_shared/third-party/chicagoflf.woff2') format('woff2');
 }
 
 body, input, button {
