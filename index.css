@@ -27,13 +27,15 @@ main {
 }
 
 .window-titlebar {
-  text-align: center;
+  display: flex;
   border-bottom: 2px solid;
   padding: 8px 0;
   line-height: 28px;
 }
 
 .window-titlebar__stripes {
+  width: 100%;
+  text-align: center;
   background: linear-gradient(to bottom,
     white calc(50% - 1px),
     black 50% calc(50% + 1px),
@@ -54,20 +56,16 @@ main {
   margin: 1px;
 }
 
-.file-table {
-  border-collapse: collapse;
+.file-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 6px;
+  text-decoration: none;
+  color: black;
 }
 
-.file-table tr:hover {
+.file-row:hover {
   background: black;
   color: white;
-  cursor: pointer;
-}
-
-.file-table td {
-  padding: 6px;
-}
-
-.file-table__file {
-  width: 100%;
 }
