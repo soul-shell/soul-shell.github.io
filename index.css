@@ -1,105 +1,17 @@
-@font-face {
-  font-family: 'Chicago';
-  src: url('third-party/chicagoflf.woff2') format('woff2');
-}
-
-body, input, button {
-  font: 17px 'Chicago', sans-serif;
-}
-
 body {
-  height: 100vh;
-  margin: 0;
-  display: flex;
+  margin: 24px;
 
-  /* Created using http://www.patternify.com */
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVQYlWNgGBwgISHh/yBQPIgAAKa/Bl4ztVlWAAAAAElFTkSuQmCC) repeat;
-}
-
-main {
-  margin: auto;
-}
-
-.window {
-  border: 2px solid;
-  background: white;
-
-  width: 85vw;
-  max-width: 980px;
-}
-
-.window-titlebar {
-  display: flex;
-  border-bottom: 2px solid;
-  padding: 8px 0;
-  line-height: 28px;
-}
-
-.window-titlebar__close-button {
-  width: 22px;
-  margin: 0 6px;
-  border: 3px solid black;
-  text-decoration: none;
-  color: black;
-}
-
-.window-titlebar__close-button:hover {
-  background: black;
-}
-
-.window-titlebar__stripes {
-  width: 100%;
-  text-align: center;
-  background: linear-gradient(to bottom,
-    white calc(50% - 1px),
-    black 50% calc(50% + 1px),
-    white calc(50% + 1px)
-  );
-  background-size: 6px 4px;
-}
-
-.window-titlebar__stripes__title {
-  display: inline-block;
-  padding: 0 12px;
-  margin-left: 28px;
-  background: #fff;
-}
-
-.window-content {
-  padding: 32px;
-  border: 3px solid black;
-  margin: 1px;
-}
-
-.file-row {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 6px;
-  text-decoration: none;
-  color: black;
-}
-
-.file-row:hover {
   background: black;
   color: white;
+
+  font: 2em 'VT323', monospace;
 }
 
-.text-input {
-  padding: 6px 12px;
-  border: 2px solid black;
-  color: black;
+#log {
+  list-style: none;
+  padding: 0;
 }
 
-.action-button {
-  border: 2px solid black;
-  padding: 6px 12px;
-  color: black;
+.navigated-away {
   background: white;
-  cursor: pointer;
-}
-
-.action-button:hover {
-  background: black;
-  color: white;
 }
