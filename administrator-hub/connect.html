@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Direct Connect (TM) Manager</title>
+  <link href="/index.css" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <div class="window">
+      <div class="window-titlebar">
+        <div class="window-titlebar__stripes">
+          <div class="window-titlebar__stripes__title">
+            Direct Connect (TM) Manager
+          </div>
+        </div>
+        <a class="window-titlebar__close-button" href="/administrator-hub"></a>
+      </div>
+      <div class="window-content">
+        <form method="get" action="/">
+          <p>
+            Enter a Direct Connect (TM) destination identifier (DCDI) in the field below:
+          </p>
+          <input name="dcdi" type="text" class="text-input js-dcdi" />
+          <p>
+            <strong>Caution:</strong> A direct link will be established between your
+            input and presentation devices and the target endpoint. Your workstation
+            <strong>will not</strong> supervise this connection. <strong>Do not</strong>
+            connect to untrusted or malfunctioning computers.
+          </p>
+          <button type="submit" class="action-button js-dc-connect">Connect</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

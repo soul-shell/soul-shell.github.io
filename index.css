@@ -3,12 +3,14 @@
   src: url('third-party/chicagoflf.woff2') format('woff2');
 }
 
+body, input, button {
+  font: 17px 'Chicago', sans-serif;
+}
+
 body {
   height: 100vh;
   margin: 0;
   display: flex;
-
-  font: 1.25em 'Chicago', sans-serif;
 
   /* Created using http://www.patternify.com */
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVQYlWNgGBwgISHh/yBQPIgAAKa/Bl4ztVlWAAAAAElFTkSuQmCC) repeat;
@@ -79,6 +81,25 @@ main {
 }
 
 .file-row:hover {
+  background: black;
+  color: white;
+}
+
+.text-input {
+  padding: 6px 12px;
+  border: 2px solid black;
+  color: black;
+}
+
+.action-button {
+  border: 2px solid black;
+  padding: 6px 12px;
+  color: black;
+  background: white;
+  cursor: pointer;
+}
+
+.action-button:hover {
   background: black;
   color: white;
 }
