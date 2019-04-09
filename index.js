@@ -1,6 +1,7 @@
 const ROUTE_TABLE = {
   '<default>': '/administrator-hub',
-  'feef.0000': '/employee-hub'
+  'feef.0000': '/employee-hub',
+  'seed.1111': '/mirror/seed.html'
 };
 
 async function delay(millis) {

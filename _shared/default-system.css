@@ -43,7 +43,7 @@ main {
 .window-titlebar__close-button {
   width: 22px;
   margin: 0 6px;
-  border: 3px solid black;
+  border: 3px solid;
   text-decoration: none;
   color: black;
 }
@@ -67,12 +67,12 @@ main {
   display: inline-block;
   padding: 0 12px;
   margin-left: 28px;
-  background: #fff;
+  background: white;
 }
 
 .window-content {
   padding: 32px;
-  border: 3px solid black;
+  border: 3px solid;
   margin: 1px;
 }
 

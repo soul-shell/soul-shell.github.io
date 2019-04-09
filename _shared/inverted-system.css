@@ -1,0 +1,13 @@
+.body-inverted {
+  filter: invert(1);
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIklEQVQYlWNgYGD4TySmpcL58+cTbyIexZiCOBQPCl/jwwAvhGk0lk64vAAAAABJRU5ErkJggg==) repeat;
+}
+
+.body-black {
+  opacity: 0;
+  background: black;
+}
+
+body {
+  transition: all 30ms;
+}
