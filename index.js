@@ -13,19 +13,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 async function resolveDCDI(dcdi) {
-  await log(`DCDI is set to "${dcdi}". Performing target lookup in the local network...`, 0);
+  await log(`DCDI is set to "${dcdi}". Performing target lookup in the local network...`, 100);
 
   const dest = ROUTE_TABLE[dcdi];
   if (dest) {
-    await log('Target found. Establishing a Direct Connect (TM) protocol link...', 1000);
-    await log('^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@', 1000);
-    await delay(80);
+    await log('Target found. Establishing a Direct Connect (TM) protocol link...', 500);
+    await log('^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@', 200);
+    await delay(50);
     window.location.href = dest;
     document.body.classList.add('navigated-away');
   }
   else {
-    await log('Target not found. Attempting to connect to the default endpoint...', 1000);
-    await delay(4000);
+    await log('Target not found. Attempting to connect to the default endpoint...', 500);
+    await delay(1500);
     resolveDCDI('<default>');
   }
 }

@@ -28,6 +28,11 @@ main {
   max-width: 980px;
 }
 
+.window ::selection {
+  color: white;
+  background: black;
+}
+
 .window-titlebar {
   display: flex;
   border-bottom: 2px solid;
@@ -102,4 +107,12 @@ main {
 .action-button:hover {
   background: black;
   color: white;
+}
+
+.window secret {
+  color: white;
+}
+
+.window secret::selection {
+  color: black;
 }
