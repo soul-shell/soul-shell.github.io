@@ -1,5 +1,6 @@
 const ROUTE_TABLE = {
-  '<default>': '/administrator-hub'
+  '<default>': '/administrator-hub',
+  'feef.0000': '/employee-hub'
 };
 
 async function delay(millis) {
@@ -16,15 +17,15 @@ async function resolveDCDI(dcdi) {
 
   const dest = ROUTE_TABLE[dcdi];
   if (dest) {
-    await log('Target found. Establishing a Direct Connect (TM) protocol link...', 1200);
-    await log('^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@', 1200);
-    await delay(100);
+    await log('Target found. Establishing a Direct Connect (TM) protocol link...', 1000);
+    await log('^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@', 1000);
+    await delay(80);
     window.location.href = dest;
     document.body.classList.add('navigated-away');
   }
   else {
-    await log('Target not found. Attempting to connect to the default endpoint...', 1200);
-    await delay(6000);
+    await log('Target not found. Attempting to connect to the default endpoint...', 1000);
+    await delay(4000);
     resolveDCDI('<default>');
   }
 }
